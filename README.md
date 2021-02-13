@@ -139,7 +139,7 @@ The Yumzie MVP will have the following features:
 As we expand on the key functionality of the Yumzie application, we envision that we would expand to offer the following features:
 
 * Generate grocery lists and shopping carts with food aisle categorization
-* Search by caloric nutrients
+* Search by desired caloric nutrients 
 * Glycemic Index information
 * Add and save favorite recipes
 
