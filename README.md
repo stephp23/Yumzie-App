@@ -19,7 +19,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/stephp23/Yumzie-App">
-    <img src="src\components\images\Banner1a.png" alt="Logo">
+    <img src="src\images\Banner1a.png" alt="Logo">
   </a>
 
   <h1 align="center">Yumzie</h1>
@@ -83,34 +83,34 @@ Yumzie is a mobile responsive website application that provides recipe recommend
 
 
  <a href="https://github.com/stephp23/Yumzie-App">
-    <img src="src\components\images\Banner2a.png" alt="Logo">
+    <img src="src\images\Banner2a.png" alt="Logo">
   </a>
 
 
 ## Wireframes - Desktop
 
 <a href="https://github.com/stephp23/Yumzie-App">
-    <img src="src\components\images\Desktop.png" alt="Logo">
+    <img src="src\images\Desktop1.png" alt="Logo">
   </a>
  
  ## Wireframes - Tablet
 
  <a href="https://github.com/stephp23/Yumzie-App">
-    <img src="src\components\images\Tablet.png" alt="Logo">
+    <img src="src\images\Tablet1.png" alt="Logo">
   </a>
 
  ## Wireframes - Mobile
 
 
   <a href="https://github.com/stephp23/Yumzie-App">
-    <img src="src\components\images\Mobile.png" alt="Logo">
+    <img src="src\images\Mobile1.png" alt="Logo">
   </a>
 
 
 ## Component Hierarchy 
 
 <a href="https://github.com/stephp23/Yumzie-App">
-    <img src="src\components\images\Components.png" alt="Logo">
+    <img src="src\images\Components1.png" alt="Logo">
   </a>
 
 ## API 
@@ -144,7 +144,7 @@ As we expand on the key functionality of the Yumzie application, we envision tha
 * Add and save favorite recipes
 
 
-<!-- ## Challenges We Ran Into 
+Challenges We Ran Into 
 
 Of course, no project would be complete without its fair share of hiccups! Some of the notable challenges we faced were ... 
 
@@ -202,8 +202,9 @@ This project was conceptualized by building wireframes and prototypes using Figm
 * Stephanie Pena - [LinkedIn](https://www.linkedin.com/in/stephanie-a-pe%C3%B1a-1132bb16a/)
 * Jahaziel Israel - [LinkedIn](https://www.linkedin.com/in/jahazielbenisrael/)
 
+## 📣Shoutout to the Tribe
 
-
+An iconic African proverb states that "If you want to go fast, go alone; but if you want to go far, go together." and we honestly want to make a special thanks to The Knowledge House Volunteer and Mentor [Miguel Vacas](https://github.com/vacas), and the late-night Discord Crew {Julian, Shafee, Ayman} for their midnight co-working and debugging,  CSS hacking and repo resurrections to make this (tiny) project possible.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
@@ -218,74 +219,3 @@ This project was conceptualized by building wireframes and prototypes using Figm
 [license-shield]: https://img.shields.io/github/license/stephp23/Yumzie-App
 [license-url]: https://github.com/stephp23/Yumzie-App
 [product-screenshot]: \src\components\images\img-3.jpg
-
-
-
-<!-- GETTING STARTED >
-## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-<!-- USAGE EXAMPLES ->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
-
-<!-- ROADMAP ->
-## Roadmap
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
-
-<!-- CONTRIBUTING ->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-
-
-<!-- LICENSE ->
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
-### Authentication
-
-1. Get a free API Key at [https://cloud.google.com](https://cloud.google.com/vision/docs/setup)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/HaxagonusD/Get-Them-Checks.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Make an `authentication.JSON` from Google Cloud Service Account
-  
-5. Place the `authentication.JSON` in the server folder.
-6. NPM Start
-    ```sh
-    cd into `client` && npm start
-    ```
-9. Server
-    ```sh
-    cd into server && `nodemon` `app.js`
-    ```

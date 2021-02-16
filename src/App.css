@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 * {
   font-family: "Source Sans Pro", sans-serif;
   margin: 0;
@@ -7,6 +9,11 @@
   text-decoration: none;
   list-style-type: none;
   outline: none;
+}
+
+body {
+  background-color: rgb(192, 189, 189);
+  background-image: url('./images/cooking.jpg');
 }
 
 html {
@@ -19,7 +26,7 @@ html {
   align-items: center;
 }
 
-h1 {
+/* h1 {
   font-size: 5rem;
   letter-spacing: 0.1rem;
   font-style: italic;
@@ -27,8 +34,71 @@ h1 {
   text-shadow: 0 0.2rem 5rem rgb(119, 115, 115);
   text-transform: uppercase;
   margin: 4rem 0;
+} */
+
+.header-title {
+  filter: drop-shadow(0.09em 0.1rem 0.1rem rgb(180, 64, 141));
+  font-size: 10em;
+  font-family: 'Pacifico', cursive;
+  padding: 0.3em 0;
+  color: white;
+  letter-spacing: 0.1em;
 }
 
+@media only screen and (max-width: 600px) {
+  .header-title {
+    font-size: 8em;
+  }
+}
+
+/* SHAF EDIT BELOW */
+/* the ul */
+.category-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: between;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 60rem; 
+  display: inline-block;
+  margin-bottom: 5em;
+}
+
+.category-list li {
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.555);
+}
+
+.category-list hr {
+  opacity: 0.2;
+}
+/* food icons */
+.category-icon {
+  height: 100%;
+  width: 30px;
+  padding: 0.5em 0;
+  margin-right: 1em;
+}
+
+.category-list li a {
+  margin: 0.2em;
+  font-size: 2em;
+  padding: 0 1em;
+  color: rgba(255, 255, 255, 0.767);
+}
+/* category name  */
+.list-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.category-list li:hover {
+  background: rgba(0, 0, 0, 0.837);
+}
+
+/* SHAF EDIT ABOVE */
 .search-form {
   width: 60rem;
   height: 10rem;
@@ -40,6 +110,12 @@ h1 {
   margin-bottom: 5rem;
   box-shadow: 1rem 2rem 5rem #aaa;
   position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+  .search-form {
+    width:100%;
+  }
 }
 
 .alert {
@@ -83,11 +159,13 @@ h1 {
 }
 
 .recipes {
+  padding-top: 2em;
   width: 90%;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap;   
   justify-content: center;
+  overflow: hidden;
   align-items: flex-start;
 }
 
@@ -101,7 +179,10 @@ h1 {
   position: relative;
   border-radius: 0.5rem;
   box-shadow: 2rem 3rem 5rem #aaa;
+  height: 400px;
+  overflow-y: auto;
 }
+
 
 .recipe h2 {
   background-color: rgba(161, 161, 161, 0.7);
@@ -125,9 +206,11 @@ h1 {
 .recipe a {
   font-size: 1.8rem;
   color: #40b48e;
+  margin: 1em;
 }
 
 .recipe button {
+  cursor: pointer;
   font-size: 2rem;
   text-transform: uppercase;
   color: #fff;
@@ -135,6 +218,10 @@ h1 {
   border: none;
   border-radius: 0.5rem;
   height: 3rem;
+}
+
+.recipe button:hover {
+  background-color: #267c5f;
 }
 
 .ingredient-list {
@@ -155,16 +242,99 @@ h1 {
 
 .recipe h4 {
   color: #b4408d;
-  background-color: rgba(161, 161, 161, 0.7);
   font-size: 1.3rem; 
   padding: .5 rem;
+  text-align: center;
 
 }
 
 .header {
-  color: red;
+  background-color: #b4408d;
+  font-size: 30px;
+  height: 3rem;
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-/* .ingredient-weight {
-  color: #40b48e;
-  font-size: 1.3rem; */
+@media only screen and (max-width: 600px) {
+  .header {
+    font-size: 20px;
+  }
+}
+
+.header a {
+  color: white;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1em;
+  background-color: #b4408d;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 6rem;
+  
+}
+
+.footer a {
+  color: white;
+}
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+@media only screen and (max-width: 1200px) {
+  .page-container {
+    height: 100%;
+  }
+}
+
+.content-wrap {
+  padding-bottom: 3rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.about, .contact, .team, .privacy {
+    background: white;
+    font-size: 2em;
+    line-height: 6rem;
+    text-align: justify;
+    margin: 2em auto;
+    padding: 1em;
+    border-radius: 50px;
+    margin: 3em 0;
+    width: 70%;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow:  20px 20px 54px #5a5a5a,
+             -20px -20px 54px #ffffff17;
+}
+
+@media only screen and (max-width: 600px) {
+  .about, .contact, .team, .privacy {
+    font-size: 12px;
+    line-height: 3rem;
+  }
+}
+
+.about h1, .contact h1, .team h1 {
+  font-family: 'Pacifico', cursive !important;
+  letter-spacing: 15px;
+  color: #b4408d;
+  padding: 1em 0;
+}
+
+.input {
+  background: white;
+}
