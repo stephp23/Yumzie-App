@@ -6,7 +6,10 @@ import Recipe from './components/Recipe';
 import Categories from './components/Categories';
 import Alert from './components/Alert';
 import { useParams } from 'react-router-dom';
+import getDataFromAPI from './services/getDataFromAPI';
 
+
+import cooking from './images/cooking.jpg';
 
 function App() {
 
@@ -16,22 +19,11 @@ function App() {
   const [recipes, setRecipes] = useState([]);
   const [alert, setAlert] = useState("");
 
-  const url = `https://api.edamam.com/search?q=${query}&to=100&app_id=${process.env.REACT_APP_EDAMAM_ID}&app_key=${process.env.REACT_APP_EDAMAM_KEY}`;
-  
 
-  /* 
-    useEffect 
-    - componentDidMount
-    - componentDidUpdate
-    - componentWillUnmount
-  */
-/* By importing categories into App.js, consider the logic behind 
-not showing 'categories' component while there are recipe results */
-
-  //export this function from a separate service file
+  //exported this function to getDataFromAPI services folder
   const getData = async () => {
     if(query !== "") {
-      const result = await Axios.get(url);
+      const result = await getDataFromAPI(query);
       if(!result.data.count) {
         return setAlert("🤷🏾‍♂️Sorry, that a'int yumzie.")
       }
@@ -65,11 +57,12 @@ not showing 'categories' component while there are recipe results */
 
   return (
     <div className="App">
-      <h1>Yumzie App</h1>
+      <h1 className="header-title">Yumzie</h1>
       <form className="search-form" onSubmit={onSubmit}>
         {alert!== "" && <Alert alert={alert} />}
         <input 
         type="text" 
+        className="input"
         placeholder="What are you hangry for?" autoComplete="off" 
         onChange={onChange}
         value={query}  
@@ -77,6 +70,7 @@ not showing 'categories' component while there are recipe results */
         <input type="submit" value="search" />
       </form>
       <Categories />
+      <hr />
       <div className="recipes">
         {recipes !== [] && recipes.map(recipe => <Recipe key={uuidv4()} recipe={recipe} />
         )}
