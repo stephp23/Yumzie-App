@@ -39,12 +39,5 @@ const routing = (
 
 ReactDOM.render(routing, document.getElementById("root"));
 
-// ReactDOM.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>,
-//   document.getElementById('root')
-// );
-
 //REFACTOR THIS CODE POST MVP
 //All of this code should be in App.js
