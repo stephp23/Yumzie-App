@@ -332,8 +332,13 @@ html {
   font-family: 'Pacifico', cursive !important;
   letter-spacing: 15px;
   color: #b4408d;
-  padding: em 0;
 }
+
+.about h1, .contact h1 {
+  padding: 1em 0;
+}
+
+
 
 .input {
   background: white;
@@ -346,6 +351,8 @@ html {
 
 .team h1 {
   margin: 1.3em 0;
+  text-align: center;
+  padding-bottom: 0.5em;
 }
 
 .team .avatar {
