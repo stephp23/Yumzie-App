@@ -356,12 +356,19 @@ html {
 
 .team-role a {
   font-size: 4em;
-	margin: 1em 1em;
+	margin: 0.5em 1em;
 }
 
 .avatar .team-role {
+  display: flex;
+  flex-direction: column;
   text-align: center;
 	color: rgba(0, 0, 0, 0.479);
+}
+
+.links {
+display: flex;
+justify-content: center;
 }
 
 @media only screen and (max-width: 1315px) {
@@ -377,9 +384,9 @@ html {
 	border-radius: 25px;
 	box-shadow: -15px 15px 0px #b4408d, 15px -15px 0px #b4408d;
   float: left;
-    width:  auto;
-    height: 300px;
-    object-fit: cover;
+  width:  500px;
+  height: auto;
+  object-fit: cover;
 }
 
 .avatar .team-role h3 {

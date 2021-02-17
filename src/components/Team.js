@@ -18,16 +18,22 @@ const Team = () => {
         <h1>Yumzie Team</h1>
         <div className="avatar">
           <div className="team-role">
-            <img src={StephaniePena} alt="profile" />
+          <img src={StephaniePena} alt="profile" />
+          <h2>Stephanie Peña</h2>
             <h3>Front End Developer</h3>
+            <div className="links">
           <a href="https://www.linkedin.com/in/stephanie-a-peña-1132bb16a/">{LinkedIn}</a>
           <a href="https://github.com/stephp23">{GitHub}</a>
           </div>
+          </div>
           <div className="team-role">
             <img src={jahaziel} alt="profile" />
+            <h2>Jahaziel Israel</h2>
             <h3>UI UX Engineer</h3>
+            <div className="links">
             <a href="https://www.linkedin.com/in/jahazielbenisrael/">{LinkedIn}</a>
             <a href="https://github.com/blaquebeardcoder">{GitHub}</a>
+            </div>
           </div>
         
         </div>
