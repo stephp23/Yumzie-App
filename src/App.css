@@ -332,9 +332,59 @@ html {
   font-family: 'Pacifico', cursive !important;
   letter-spacing: 15px;
   color: #b4408d;
-  padding: 1em 0;
+  padding: em 0;
 }
 
 .input {
   background: white;
 }
+
+.team {
+  display: flex;
+  flex-direction: column;
+}
+
+.team h1 {
+  margin: 1.3em 0;
+}
+
+.team .avatar {
+  flex-wrap: wrap;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.team-role a {
+  font-size: 4em;
+	margin: 1em 1em;
+}
+
+.avatar .team-role {
+  text-align: center;
+	color: rgba(0, 0, 0, 0.479);
+}
+
+@media only screen and (max-width: 1315px) {
+	.avatar img {
+		margin: 2em;
+	}
+}
+
+.avatar img {
+  text-align: center;
+	background: #ffffff;
+	border: 1px solid white;
+	border-radius: 25px;
+	box-shadow: -15px 15px 0px #b4408d, 15px -15px 0px #b4408d;
+  float: left;
+    width:  auto;
+    height: 300px;
+    object-fit: cover;
+}
+
+.avatar .team-role h3 {
+  margin: 1em;
+  color: #b4408d;
+  font-size: 1.2em;
+}
+
