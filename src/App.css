@@ -321,6 +321,27 @@ html {
              -20px -20px 54px #ffffff17;
 }
 
+.tkh {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tkh-text {
+  color: rgba(0, 0, 0, 0.712);
+  padding: 3em;
+  text-align: justify;
+}
+
+.TKH_NameLogo {
+  width: 300px;
+  height: auto;
+}
+
+.tkh-logo {
+  height: 200px;
+  width: auto;
+}
+
 @media only screen and (max-width: 600px) {
   .about, .contact, .team, .privacy {
     font-size: 12px;
@@ -337,8 +358,6 @@ html {
 .about h1, .contact h1 {
   padding: 1em 0;
 }
-
-
 
 .input {
   background: white;
@@ -379,6 +398,7 @@ html {
 
 .links {
 display: flex;
+flex-direction: column;
 justify-content: center;
 }
 
