@@ -23,7 +23,7 @@
     <a href="https://github.com/stephp23/Yumzie-App"><strong>🔍Explore the Docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/stephp23/Yumzie-App">👀 View Demo</a>
+    <a href="https://yumzie.netlify.app/">👀 View Demo</a>
     ·
     <a href="https://github.com/stephp23/Yumzie-App">🐛Report Bug</a>
     ·
