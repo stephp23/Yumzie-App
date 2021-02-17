@@ -1,12 +1,5 @@
 ### 
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -27,7 +20,7 @@
   <p align="center">
     What are you hangry for?
     <br />
-    <a href="https://github.com/stephp23/Yumzie-App"><strong>🔍Explore the docs »</strong></a>
+    <a href="https://github.com/stephp23/Yumzie-App"><strong>🔍Explore the Docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/stephp23/Yumzie-App">👀 View Demo</a>
@@ -128,10 +121,10 @@ We are using the [Edamam Recipe Search API](https://www.edamam.com/) which has t
   
 ## MVP 
 
-The Yumzie MVP will have the following features:
+The Yumzie MVP version will have the following features:
 
-* Responsive design on desktop, tablet and mobile.
-* Keyword search over 1 million recipes
+* Responsive design on _desktop, tablet and mobile_
+* Keyword search over **1 million recipes**
 * Select curated recipes from over 10 curated categories 
 
 ## Post MVP 
@@ -144,37 +137,34 @@ As we expand on the key functionality of the Yumzie application, we envision tha
 * Add and save favorite recipes
 
 
-Challenges We Ran Into 
+## Challenges We Ran Into 
+🤷🏽‍♀️ Of course, no project would be complete without its fair share of hiccups! Some of the notable challenges we faced were ... 
 
-Of course, no project would be complete without its fair share of hiccups! Some of the notable challenges we faced were ... 
-
-* Challenge 1
-* Challenge 2
-* Challenge 3
+* After accessing the Edamam API to display results based on a single query, we experienced a challenge of incorporating `React-Router` to link additional category components, and have the results display on a new page.  The UI/UX design included category cards that would display on loading.  We discovered that by utilizing the react hook `{useParams}` from react-router-dom that we could map through the API and display the results in a query.  
+  
+* After pulling a _redbull infused all-nighter_ and adding _hundreds of lines of CSS styling_ while trying out the **Live Share** feature to peer code in VS Code for the first time, we finally got our project to display as our UI/UX design. 🎉We were on TOP of the world-- now we only need to simply `git push` to the project branch, and deploy the project.  However, when attempting to push the updated project to github, there was an error due to being on the incorrect branch, and unbeknownst to us, **all of the udpated files were LOST** 💀 _(we later uncovered they were stashed)_  After a concerted effort to find out how to revert to a previous commit, minor panic attacks, and the calm and collective instructions from the more experienced fellows in the cohort, we discovered that `git stash list` `git stash show` and `git remote set-url origin url` helped recover all of our lost code! Whew- that was close.   
 
 ## Accomplishments 
 
 We accomplished the following in a short period of time:
 
-* Accomplishment 1
-* Accomplishment 2
-* Accomplishment 3
+* In spite of our challenges with building our first React application, we were able to deploy a fully functional application that met the specifications of the project brief.
+  
+* We truly had to lean on our resources and network in order to level up our programming skills to accomplish this project, and that for us was a definite win.
 
 ## What We Learned 
 
 We learned the following very quickly:
 
-* Learning outcome 1
-* Learning outcome 2
-* Learning outcome 3
+* How to access and display data from a API and use React-Router-DOM in order to route the data to multiple components and pages.
+  
+* How to deploy a completed react application to Netlify.
 
 ## What's Next 
 
 We are looking foward to many new opportunities in the near future, including;
 
-* Opportunity 1
-* Opportunity 2
-* Opportunity 3 -->
+* Continuing to build small projects in order to level up on the skills we are learning at The Knowledge House.
 
 <!-- BUILT WITH -->
 ## Built With 
@@ -184,8 +174,6 @@ This project was conceptualized by building wireframes and prototypes using Figm
 * [JavaScript](https://javascript.com)
 * [ReactJS](https://reactjs.org)
 * [Edamam API](https://developer.edamam.com/)
-* [Tailwind CSS](https://tailwindcss.com/)
-
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
@@ -199,12 +187,14 @@ This project was conceptualized by building wireframes and prototypes using Figm
 <!-- CONTACT -->
 ## Our Team
 
-* Stephanie Pena - [LinkedIn](https://www.linkedin.com/in/stephanie-a-pe%C3%B1a-1132bb16a/)
 * Jahaziel Israel - [LinkedIn](https://www.linkedin.com/in/jahazielbenisrael/)
+* Stephanie Pena - [LinkedIn](https://www.linkedin.com/in/stephanie-a-pe%C3%B1a-1132bb16a/)
 
 ## 📣Shoutout to the Tribe
 
-An iconic African proverb states that "If you want to go fast, go alone; but if you want to go far, go together." and we honestly want to make a special thanks to The Knowledge House Volunteer and Mentor [Miguel Vacas](https://github.com/vacas), and the late-night Discord Crew {Julian, Shafee, Ayman} for their midnight co-working and debugging,  CSS hacking and repo resurrections to make this (tiny) project possible.
+> "If you want to go fast, go alone; but if you want to go far, go together." 
+
+We honestly want to make a special thanks to The Knowledge House Volunteer and Mentor [Miguel Vacas](https://github.com/vacas), and the late-night Discord Crew {Julian, Shafee, Ayman} for their midnight co-working and debugging,  CSS hacking and teeth-grinding **repo resurrections** to make this (tiny) project possible.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
