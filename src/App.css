@@ -366,6 +366,10 @@ html {
 	color: rgba(0, 0, 0, 0.479);
 }
 
+.team-role h2 {
+  margin-top: 1em;
+}
+
 .links {
 display: flex;
 justify-content: center;
