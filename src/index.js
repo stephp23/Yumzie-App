@@ -12,8 +12,7 @@ import Team from './components/Team';
 import Privacy from './components/Privacy';
 import CategoryResults from './components/CategoryResults';
 
-//All of the routes are listed here.
-//Note that the ORDER of the routes DOES MATTER in the way they appear!
+
 const routing = (
   <Router>
     <div className="page-container">
@@ -39,5 +38,3 @@ const routing = (
 
 ReactDOM.render(routing, document.getElementById("root"));
 
-//REFACTOR THIS CODE POST MVP
-//All of this code should be in App.js

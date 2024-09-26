@@ -20,7 +20,6 @@ function App() {
   const [alert, setAlert] = useState("");
 
 
-  //exported this function to getDataFromAPI services folder
   const getData = async () => {
     if(query !== "") {
       const result = await getDataFromAPI(query);

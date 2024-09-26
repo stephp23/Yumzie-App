@@ -6,12 +6,12 @@ import Recipe from "./Recipe"
 import { v4 as uuidv4 } from 'uuid'; 
 
 const CategoryResults = () => {
-    //using the useParams hook in order to update the url
+    
     const {query} = useParams()
     console.log(query)
     const [categoryResults, setCategoryResults] = useState(undefined) 
     
-    //mapping through the API to access the category queries
+    
     useEffect(()=>{
         (async ()=>{
             const data = await getDataFromAPI(query)
@@ -20,7 +20,7 @@ const CategoryResults = () => {
         })()
     },[])
 
-    //this is how we display the new category results
+    
     return (
         <div>
             
